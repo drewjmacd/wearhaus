@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WearHaus — Your Personal Stylist</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      color: #c9a96e;
+      font-family: Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    h1 {
+      font-size: clamp(36px, 8vw, 72px);
+      letter-spacing: 0.2em;
+      font-weight: 400;
+      color: #c9a96e;
+      margin-bottom: 16px;
+    }
+    p.tagline {
+      font-size: clamp(14px, 2.5vw, 18px);
+      color: #8a7550;
+      letter-spacing: 0.05em;
+      margin-bottom: 48px;
+    }
+    p.coming {
+      font-size: 13px;
+      color: #5a4e38;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .form {
+      display: flex;
+      gap: 0;
+      max-width: 420px;
+      width: 100%;
+      border: 1px solid #c9a96e;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .form input {
+      flex: 1;
+      background: #0a0a0a;
+      border: none;
+      padding: 14px 16px;
+      color: #c9a96e;
+      font-size: 14px;
+      font-family: Georgia, serif;
+      outline: none;
+    }
+    .form input::placeholder { color: #4a3e2a; }
+    .form button {
+      background: #c9a96e;
+      border: none;
+      padding: 14px 20px;
+      color: #000;
+      font-size: 13px;
+      font-family: Georgia, serif;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      white-space: nowrap;
+      margin: 0;
+      border-radius: 0;
+    }
+    .form button:hover { background: #b8945a; }
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: #2a2015;
+      margin: 48px auto;
+    }
+    .stores {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .store-badge {
+      border: 1px solid #2a2015;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 12px;
+      color: #5a4e38;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .footer {
+      position: fixed;
+      bottom: 24px;
+      font-size: 11px;
+      color: #2a2015;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <h1>WEARHAUS</h1>
+  <p class="tagline">Your personal stylist, curated daily.</p>
+  <p class="coming">Coming soon to iOS & Android</p>
+  <div class="form">
+    <input type="email" placeholder="Enter your email">
+    <button>Join Waitlist</button>
+  </div>
+  <div class="divider"></div>
+  <div class="stores">
+    <div class="store-badge">App Store</div>
+    <div class="store-badge">Google Play</div>
+  </div>
+  <p class="footer">© 2026 WearHaus</p>
+</body>
+</html>
